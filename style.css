@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+:root {
+  --mainBG: #00173d;
+  --cardBG: #6912e2;
+  --text-1: #ffffff;
+  --text-bg: #cfccf1;
+  --buttons: #ffce47;
+  --b-active: #ff006e;
+  --b-hover: #ff70ae;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--mainBG);
+}
+h1 {
+  color: #ffce47;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--text-1);
+  background-color: var(--cardBG);
+  width: 300px;
+  height: 380px;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+h2 {
+  margin: 10px 0;
+}
+.card {
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: var(--text-bg);
+  color: #00173d;
+  line-height: 28px;
+}
+.reload {
+  background-color: transparent;
+  border: none;
+}
+.reload svg {
+  fill: var(--text-1);
+  height: 25px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+svg:hover {
+  fill: var(--b-hover);
+}
+svg:active {
+  fill: var(--b-active);
+}
+div {
+  margin-bottom: 10px;
+}
+.choices {
+  color: var(--mainBG);
+  background-color: var(--buttons);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.choices:hover {
+  background-color: var(--b-hover);
+}
+.choices:active {
+  color: var(--text-1);
+  background-color: var(--b-active);
+}
+
+footer {
+  font-size: 11px;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  bottom: -20px;
+  color: var(--cardBG);
+}
