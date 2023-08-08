@@ -93,3 +93,6 @@ footer {
   bottom: -20px;
   color: var(--cardBG);
 }
+.attribution a {
+  color: var(--cardBG);
+}
